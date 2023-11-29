@@ -53,6 +53,35 @@ for (int i = 0; i < str.length(); i++)
 After watching the video, I understood the concept. The for loop condition will go through every letter of the string and the ` System.out.print(str.substring(i, i + 1));' will print out every letter sine substring is the first letter you want and the other letter your don't want (+1).
 
 ### Challenge 4
+After learning all materials about unit 4 we had to take an exam. I didn't do so well at the exam so I will take you through some of the questions I got wrong and my explanation and reasoing. 
+#### Question 1 
+```js
+int f = 0;
+while (f < 7)
+{
+  System.out.print(f % 3 + " ");
+  f++;
+}
+```
+For this question I answered `0 1 2 0 1 2 `. This is wrong because there should be 7 outputs instead of 6 since f = 0 so the answer is `0 1 2 0 1 2 0 `
+
+#### Question 2
+Assuming that str is a correctly initialized String, which of the following best describes what the algorithm below does?
+```js
+int i = str.indexOf("a");
+while (i != -1) 
+{
+  System.out.print(str.substring(0,i));
+  str = str.substring(i + 1);
+  i = str.indexOf("a");
+}
+
+System.out.print(str);
+```
+In this question I said `Prints the character before each a in str`. I realized that this is wrong because `str = str.substring(i + 1);` has a plus 1 so it prints the word including a so the answer is `Prints each character in the string, str, except for the lowercase a’s`.
+
 
 ### Takeaways
 * Watch youtube videos if you don't understand a topic since there are a lot or resources in youtube
+* You should aways review the questions you got wrong in the unit exam because it can help you learn from your mistakes
+  
